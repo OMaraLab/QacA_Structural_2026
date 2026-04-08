@@ -1,4 +1,4 @@
-# Quaternary Ammonium Compound Transporter A (QacA) Structural and Dynamics Study
+# Strucutral basis of drug efflux by the staphylococcal multidrug efflux pump QacA
 
 This repository contains files to replicate Molecular Dynamics simulations of the QacA multidrug efflux pump.
 
