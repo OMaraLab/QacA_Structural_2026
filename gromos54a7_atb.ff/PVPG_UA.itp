@@ -1,0 +1,379 @@
+;----------------------------TITLE -----------------------------------------------------------------------------------------
+;   None
+;
+; This file was generated at 23:24 on 2022-01-12 by
+;
+;                  Automatic Topology Builder  
+;
+;                   REVISION 2021-05-20 12:41:00
+;---------------------------------------------------------------------------------------------------------------------------
+; Authors     : Martin Stroet, Bertrand Caron, Alpeshkumar K. Malde, Thomas Lee, Alan E. Mark
+;
+; Institute   : Molecular Dynamics group, 
+;               School of Chemistry and Molecular Biosciences (SCMB),
+;               The University of Queensland, QLD 4072, Australia
+; URL         : https://atb.uq.edu.au
+; Citations   : 1. Malde AK, Zuo L, Breeze M, Stroet M, Poger D, Nair PC, Oostenbrink C, Mark AE.
+;                  An Automated force field Topology Builder (ATB) and repository: version 1.0.
+;                  Journal of Chemical Theory and Computation, 2011, 7, 4026-4037.
+;               2. Stroet M, Caron B, Visscher K, Geerke D, Malde AK, Mark AE.
+;                  Automated Topology Builder version 3.0: Prediction of solvation free enthalpies in water and hexane.
+;                  DOI:10.1021/acs.jctc.8b00768
+;
+; Disclaimer  : 
+;      While every effort has been made to ensure the accuracy and validity of parameters provided below
+;      the assignment of parameters is being based on an automated procedure combining data provided by a
+;      given user as well as calculations performed using third party software. They are provided as a guide.
+;      The authors of the ATB cannot guarantee that the parameters are complete or that the parameters provided
+;      are appropriate for use in any specific application. Users are advised to treat these parameters with discretion
+;      and to perform additional validation tests for their specific application if required. Neither the authors
+;      of the ATB or The University of Queensland except any responsibly for how the parameters may be used.
+;
+; Release notes and warnings: 
+;  (1) The topology is based on a set of atomic coordinates and other data provided by the user after
+;      after quantum mechanical optimization of the structure using different levels of theory depending on
+;      the nature of the molecule.
+;  (2) In some cases the automatic bond, bond angle and dihedral type assignment is ambiguous.
+;      In these cases alternative type codes are provided at the end of the line.
+;  (3) While bonded parameters are taken where possible from the nominated force field non-standard bond, angle and dihedral
+;      type code may be incorporated in cases where an exact match could not be found. These are marked as "non-standard"
+;      or "uncertain" in comments.
+;  (4) In some cases it is not possible to assign an appropriate parameter automatically. "%%" is used as a place holder
+;      for those fields that could not be determined automatically. The parameters in these fields must be assigned manually
+;      before the file can be used.
+;---------------------------------------------------------------------------------------------------------------------------
+; Input Structure : PVPG
+; Output          : UNITED ATOM topology
+;	Use in conjunction with the corresponding united atom PDB file.
+;---------------------------------------------------------------------------------------------------------------------------
+; Citing this topology file
+; ATB molid: 828852
+; ATB Topology Hash: dd084
+;---------------------------------------------------------------------------------------------------------------------------
+; Initial Guess Topology Generation:
+; The topology was generated from AM1 optimized geometry and MOPAC charges.
+; Bonded and van der Waals parameters were taken from the GROMOS 54A7 parameter set.
+;---------------------------------------------------------------------------------------------------------------------------
+;
+;
+[ moleculetype ]
+; Name   nrexcl
+PVPG     3
+[ atoms ]
+;  nr  type  resnr  resid  atom  cgnr  charge    mass
+    1   CH3    1    PVPG    C40    1    0.003  15.0350
+    2   CH2    1    PVPG    C39    2   -0.004  14.0270
+    3   CH2    1    PVPG    C38    3   -0.001  14.0270
+    4   CH2    1    PVPG    C37    4   -0.000  14.0270
+    5   CH2    1    PVPG    C36    5    0.000  14.0270
+    6   CH2    1    PVPG    C35    6   -0.004  14.0270
+    7   CH2    1    PVPG    C34    7    0.001  14.0270
+    8   CH2    1    PVPG    C33    8   -0.002  14.0270
+    9   CH2    1    PVPG    C32    9    0.001  14.0270
+   10   CH2    1    PVPG    C31   10   -0.003  14.0270
+   11   CH2    1    PVPG    C30   11    0.006  14.0270
+   12   CH2    1    PVPG    C29   12   -0.003  14.0270
+   13   CH2    1    PVPG    C28   13    0.017  14.0270
+   14   CH2    1    PVPG    C27   14    0.023  14.0270
+   15   CH2    1    PVPG    C26   15    0.073  14.0270
+   16  CPos    1    PVPG    C25   16    0.301  12.0110
+   17 OEOpt    1    PVPG    O10   17   -0.366  15.9994
+   18    OE    1    PVPG     O9   18   -0.274  15.9994
+   19   CH2    1    PVPG    C24   19    0.181  14.0270
+   20     C    1    PVPG     C5   20    0.017  12.0110
+   21    HC    1    PVPG    H10   21    0.148   1.0080
+   22   CH2    1    PVPG     C4   22    0.203  14.0270
+   23  OAlc    1    PVPG     O6   23   -0.735  15.9994
+   24     P    1    PVPG     P1   24    2.541  30.9738
+   25    OM    1    PVPG     O4   25   -1.151  15.9994
+   26    OM    1    PVPG     O5   26   -1.136  15.9994
+   27  OAlc    1    PVPG     O3   27   -0.747  15.9994
+   28   CH2    1    PVPG     C3   28    0.163  14.0270
+   29     C    1    PVPG     C2   29   -0.021  12.0110
+   30    HC    1    PVPG     H4   30    0.092   1.0080
+   31  OAlc    1    PVPG     O2   31   -0.351  15.9994
+   32  HS14    1    PVPG     H5   32    0.222   1.0080
+   33   CH2    1    PVPG     C1   33    0.125  14.0270
+   34  OAlc    1    PVPG     O1   34   -0.367  15.9994
+   35  HS14    1    PVPG     H1   35    0.256   1.0080
+   36    OE    1    PVPG     O7   36   -0.260  15.9994
+   37  CPos    1    PVPG     C6   37    0.327  12.0110
+   38 OEOpt    1    PVPG     O8   38   -0.378  15.9994
+   39   CH2    1    PVPG     C7   39    0.074  14.0270
+   40   CH2    1    PVPG     C8   40    0.033  14.0270
+   41   CH2    1    PVPG     C9   41   -0.011  14.0270
+   42   CH2    1    PVPG    C10   42    0.019  14.0270
+   43   CH2    1    PVPG    C11   43   -0.004  14.0270
+   44   CH2    1    PVPG    C12   44   -0.008  14.0270
+   45   CH2    1    PVPG    C13   45    0.008  14.0270
+   46   CH2    1    PVPG    C14   46    0.010  14.0270
+   47   CH2    1    PVPG    C15   47    0.037  14.0270
+   48     C    1    PVPG    C16   48   -0.161  12.0110
+   49    HC    1    PVPG    H29   49    0.124   1.0080
+   50     C    1    PVPG    C17   50   -0.181  12.0110
+   51    HC    1    PVPG    H30   51    0.119   1.0080
+   52   CH2    1    PVPG    C18   52    0.043  14.0270
+   53   CH2    1    PVPG    C19   53    0.001  14.0270
+   54   CH2    1    PVPG    C20   54    0.001  14.0270
+   55   CH2    1    PVPG    C21   55    0.003  14.0270
+   56   CH2    1    PVPG    C22   56   -0.006  14.0270
+   57   CH3    1    PVPG    C23   57    0.002  15.0350
+; total charge of the molecule:  -1.000
+[ bonds ]
+;  ai   aj  funct   c0         c1
+    1    2    2   0.1510   3.7279e+06
+    2    3    2   0.1520   5.4300e+06
+    3    4    2   0.1520   5.4300e+06
+    4    5    2   0.1520   5.4300e+06
+    5    6    2   0.1520   5.4300e+06
+    6    7    2   0.1520   5.4300e+06
+    7    8    2   0.1520   5.4300e+06
+    8    9    2   0.1520   5.4300e+06
+    9   10    2   0.1520   5.4300e+06
+   10   11    2   0.1520   5.4300e+06
+   11   12    2   0.1520   5.4300e+06
+   12   13    2   0.1520   5.4300e+06
+   13   14    2   0.1520   5.4300e+06
+   14   15    2   0.1520   5.4300e+06
+   15   16    2   0.1500   8.3700e+06
+   16   17    2   0.1230   1.6600e+07
+   16   18    2   0.1360   1.0200e+07
+   18   19    2   0.1440   3.3758e+05
+   19   20    2   0.1530   7.1500e+06
+   20   21    2   0.1130   7.0483e+06
+   20   22    2   0.1530   7.1500e+06
+   20   36    2   0.1430   8.1800e+06
+   22   23    2   0.1390   8.6600e+06
+   23   24    2   0.1650   3.3058e+06
+   24   25    2   0.1480   8.6000e+06
+   24   26    2   0.1480   8.6000e+06
+   24   27    2   0.1650   3.3058e+06
+   27   28    2   0.1400   8.5400e+06
+   28   29    2   0.1530   7.1500e+06
+   29   30    2   0.1130   7.0483e+06
+   29   31    2   0.1420   3.2236e+06
+   29   33    2   0.1530   7.1500e+06
+   31   32    2   0.0971   7.9547e+06
+   33   34    2   0.1410   6.5389e+06
+   34   35    2   0.0972   1.9581e+07
+   36   37    2   0.1360   1.0200e+07
+   37   38    2   0.1230   1.6600e+07
+   37   39    2   0.1500   8.3700e+06
+   39   40    2   0.1520   5.4300e+06
+   40   41    2   0.1520   5.4300e+06
+   41   42    2   0.1520   5.4300e+06
+   42   43    2   0.1520   5.4300e+06
+   43   44    2   0.1520   5.4300e+06
+   44   45    2   0.1520   5.4300e+06
+   45   46    2   0.1520   5.4300e+06
+   46   47    2   0.1520   5.4300e+06
+   47   48    2   0.1480   5.7300e+06
+   48   49    2   0.1100   1.2100e+07
+   48   50    2   0.1330   1.1800e+07
+   50   51    2   0.1100   1.2100e+07
+   50   52    2   0.1480   5.7300e+06
+   52   53    2   0.1520   5.4300e+06
+   53   54    2   0.1520   5.4300e+06
+   54   55    2   0.1520   5.4300e+06
+   55   56    2   0.1520   5.4300e+06
+   56   57    2   0.1510   3.7279e+06
+[ pairs ]
+;  ai   aj  funct  ;  all 1-4 pairs but the ones excluded in GROMOS itp
+    1    4    1
+    2    5    1
+    3    6    1
+    4    7    1
+    5    8    1
+    6    9    1
+    7   10    1
+    8   11    1
+    9   12    1
+   10   13    1
+   11   14    1
+   12   15    1
+   13   16    1
+   14   17    1
+   14   18    1
+   15   19    1
+   16   20    1
+   17   19    1
+   18   21    1
+   18   22    1
+   18   36    1
+   19   23    1
+   19   37    1
+   20   24    1
+   20   38    1
+   20   39    1
+   21   23    1
+   21   37    1
+   22   25    1
+   22   26    1
+   22   27    1
+   22   37    1
+   23   28    1
+   23   36    1
+   24   29    1
+   25   28    1
+   26   28    1
+   27   30    1
+   27   31    1
+   27   33    1
+   28   32    1
+   28   34    1
+   29   35    1
+   30   32    1
+   30   34    1
+   31   34    1
+   32   33    1
+   36   40    1
+   37   41    1
+   38   40    1
+   39   42    1
+   40   43    1
+   41   44    1
+   42   45    1
+   43   46    1
+   44   47    1
+   45   48    1
+   46   49    1
+   46   50    1
+   47   51    1
+   47   52    1
+   48   53    1
+   49   51    1
+   49   52    1
+   50   54    1
+   51   53    1
+   52   55    1
+   53   56    1
+   54   57    1
+[ angles ]
+;  ai   aj   ak  funct   angle     fc
+    1    2    3    2    111.00   530.00
+    2    3    4    2    111.00   530.00
+    3    4    5    2    111.00   530.00
+    4    5    6    2    111.00   530.00
+    5    6    7    2    111.00   530.00
+    6    7    8    2    111.00   530.00
+    7    8    9    2    111.00   530.00
+    8    9   10    2    111.00   530.00
+    9   10   11    2    111.00   530.00
+   10   11   12    2    111.00   530.00
+   11   12   13    2    111.00   530.00
+   12   13   14    2    111.00   530.00
+   13   14   15    2    111.00   530.00
+   14   15   16    2    111.00   530.00
+   15   16   17    2    126.00   640.00
+   15   16   18    2    111.00   530.00
+   17   16   18    2    124.00   730.00
+   16   18   19    2    117.00   635.00
+   18   19   20    2    109.50   520.00
+   19   20   21    2    110.30   524.00
+   19   20   22    2    109.50   520.00
+   19   20   36    2    111.00   530.00
+   21   20   22    2    110.30   524.00
+   21   20   36    2    101.00  2076.33
+   22   20   36    2    111.00   530.00
+   20   22   23    2    111.00   530.00
+   22   23   24    2    120.00   530.00
+   23   24   25    2    109.60   450.00
+   23   24   26    2    109.60   450.00
+   23   24   27    2     97.90 16311.89
+   25   24   26    2    127.00  5470.71
+   25   24   27    2    103.00   420.00
+   26   24   27    2    109.60   450.00
+   24   27   28    2    120.00   530.00
+   27   28   29    2    111.00   530.00
+   28   29   30    2    108.53   443.00
+   28   29   31    2    111.00   530.00
+   28   29   33    2    111.00   530.00
+   30   29   31    2    106.00  1733.55
+   30   29   33    2    109.00  1680.51
+   31   29   33    2    109.50   520.00
+   29   31   32    2    109.50   450.00
+   29   33   34    2    111.00   530.00
+   33   34   35    2    109.50   450.00
+   20   36   37    2    120.00   390.00
+   36   37   38    2    124.00   730.00
+   36   37   39    2    115.00   610.00
+   38   37   39    2    126.00   640.00
+   37   39   40    2    111.00   530.00
+   39   40   41    2    111.00   530.00
+   40   41   42    2    111.00   530.00
+   41   42   43    2    111.00   530.00
+   42   43   44    2    111.00   530.00
+   43   44   45    2    111.00   530.00
+   44   45   46    2    111.00   530.00
+   45   46   47    2    111.00   530.00
+   46   47   48    2    111.00   530.00
+   47   48   49    2    120.00   505.00
+   47   48   50    2    126.00   640.00
+   49   48   50    2    120.00   505.00
+   48   50   51    2    120.00   505.00
+   48   50   52    2    126.00   640.00
+   51   50   52    2    120.00   505.00
+   50   52   53    2    111.00   530.00
+   52   53   54    2    111.00   530.00
+   53   54   55    2    111.00   530.00
+   54   55   56    2    111.00   530.00
+   55   56   57    2    111.00   530.00
+[ dihedrals ]
+; GROMOS improper dihedrals
+;  ai   aj   ak   al  funct   angle     fc
+   37   36   38   39    2      0.00   167.36
+   48   47   49   50    2      0.00   167.36
+   50   48   51   52    2      0.00   167.36
+   16   15   17   18    2      0.00   167.36
+   29   31   33   28    2     35.26   334.72
+   20   36   22   19    2     35.26   334.72
+[ dihedrals ]
+;  ai   aj   ak   al  funct    ph0      cp     mult
+    1    2    3    4    1      0.00     5.92    3
+    2    3    4    5    1      0.00     5.92    3
+    3    4    5    6    1      0.00     5.92    3
+    4    5    6    7    1      0.00     5.92    3
+    5    6    7    8    1      0.00     5.92    3
+    6    7    8    9    1      0.00     5.92    3
+    7    8    9   10    1      0.00     5.92    3
+    8    9   10   11    1      0.00     5.92    3
+    9   10   11   12    1      0.00     5.92    3
+   10   11   12   13    1      0.00     5.92    3
+   11   12   13   14    1      0.00     5.92    3
+   12   13   14   15    1      0.00     5.92    3
+   13   14   15   16    1      0.00     5.92    3
+   14   15   16   18    1    180.00     1.00    6
+   16   18   19   20    1      0.00     1.26    3
+   17   16   18   19    1    180.00    24.00    2
+   18   19   20   22    1      0.00     5.92    3
+   20   22   23   24    1    180.00     1.00    3
+   20   36   37   38    1    180.00    24.00    2
+   22   20   36   37    1      0.00     1.26    3
+   22   23   24   27    1      0.00     3.19    3
+   22   23   24   27    1      0.00     5.09    2
+   24   27   28   29    1    180.00     1.00    3
+   25   24   27   28    1      0.00     3.19    3
+   25   24   27   28    1      0.00     5.09    2
+   27   28   29   33    1      0.00     5.92    3
+   29   33   34   35    1      0.00     1.26    3
+   31   29   33   34    1      0.00     5.92    3
+   33   29   31   32    1      0.00     1.26    3
+   36   20   22   23    1      0.00     5.92    3
+   36   37   39   40    1      0.00     1.00    6
+   37   39   40   41    1      0.00     5.92    3
+   39   40   41   42    1      0.00     5.92    3
+   40   41   42   43    1      0.00     5.92    3
+   41   42   43   44    1      0.00     5.92    3
+   42   43   44   45    1      0.00     5.92    3
+   43   44   45   46    1      0.00     5.92    3
+   44   45   46   47    1      0.00     5.92    3
+   45   46   47   48    1      0.00     5.92    3
+   46   47   48   50    1    180.00     1.00    6
+   47   48   50   52    1    180.00    41.80    2
+   48   50   52   53    1    180.00     1.00    6
+   50   52   53   54    1      0.00     5.92    3
+   52   53   54   55    1      0.00     5.92    3
+   53   54   55   56    1      0.00     5.92    3
+   54   55   56   57    1      0.00     5.92    3
+[ exclusions ]
+;  ai   aj  funct  ;  GROMOS 1-4 exclusions

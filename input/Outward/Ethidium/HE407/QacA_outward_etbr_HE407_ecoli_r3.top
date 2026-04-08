@@ -1,0 +1,56 @@
+;
+;	File 'QacA_outward_etbr_HE407.top' was generated
+;	By user: patricksutton (1006)
+;	On host: aibn-6nvnxm3
+;	At date: Thu Jan 18 15:17:30 2024
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                     :-) GROMACS - gmx pdb2gmx, 2022 (-:
+;	
+;	Executable:   /usr/local/gromacs/bin/gmx
+;	Data prefix:  /usr/local/gromacs
+;	Working dir:  /media/patricksutton/SQUID-2/QacA_new_dir_uqzzhou1/qaca/new_data/redo_from_scratch/setup_new_system/build_test/coordinates/get_protein/Build_test1/QacA_outward_etbr/HE407
+;	Command line:
+;	  gmx pdb2gmx -f ../../../qac_etbr_new_chainA_qaca_eth_opened_with_swiss_pdb_viewer_capped_uniform_length.pdb -p QacA_outward_etbr_HE407.top -o 01_QacA_outward_etbr_HE407.gro -i QacA_outward_etbr_HE407_posres.itp -ignh -heavyh -ter -asp -glu
+;	Force field was read from current directory or a relative path - path added.
+;
+
+#define HEAVY_H
+
+; Include forcefield parameters
+#include "../gromos54a7_atb.ff/forcefield.itp"
+#include "../gromos54a7_atb.ff/QacA_outward_HE407.itp"
+#include "../gromos54a7_atb.ff/ETHI_UA.itp"
+#include "../gromos54a7_atb.ff/PVPE_UA.itp"
+#include "../gromos54a7_atb.ff/PVPG_UA.itp"
+#include "../gromos54a7_atb.ff/PYPV-CL_UA.itp"
+; Include water topology
+#include "../gromos54a7_atb.ff/spc.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "../gromos54a7_atb.ff/ions.itp"
+
+[ system ]
+; Name
+Protein in water
+
+[ molecules ]
+; Compound        #mols
+QacA_ChainA     1
+ETHI            1
+CL              1
+PVPE            648
+PVPG            143
+PYPV            57
+SOL         76912
+NA               622
+CL               365
