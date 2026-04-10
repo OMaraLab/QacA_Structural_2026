@@ -9,8 +9,6 @@ nstcomm             =  1000
 ; xtc file outputs
 nstxout-compressed  =  5000                      
 
-nstlist             =  4
-
 ; periodic boundary conditions
 pbc             = xyz
 
@@ -21,6 +19,7 @@ rcoulomb	        = 1.4
 rlist		        = 1.4
 rvdw 		        = 1.4
 epsilon-rf          = 61
+nstlist             =  4
 
 ; Remperature coupling
 Tcoupl              =  v-rescale
