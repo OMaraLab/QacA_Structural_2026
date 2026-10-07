@@ -1,6 +1,6 @@
 # Strucutral basis of drug efflux by the staphylococcal multidrug efflux pump QacA
 
-This repository contains files to replicate Molecular Dynamics simulations of the QacA multidrug efflux pump.
+This repository contains files to replicate Molecular Dynamics simulations of the QacA multidrug efflux pump in two conformations, inward open and outward open, in the apo or ethidium bound. The effect of E407, a key acidic residue in the binding of ethidium, was investigated. 
 
 These files are associated with the following publication:
 
